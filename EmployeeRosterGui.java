@@ -172,7 +172,7 @@ public class EmployeeRosterGui implements ActionListener, ItemListener, KeyListe
             crr.setEnabled(false);
             noii.setEnabled(false);
          }
-         else if (jcWorker.getSelectedItem().equals("Hourly worker")){
+         else if (wo.getSelectedItem().equals("Hourly worker")){
             numm.setEnabled(false);
             rpii.setEnabled(false);
             hww.setEnabled(true);
@@ -182,7 +182,7 @@ public class EmployeeRosterGui implements ActionListener, ItemListener, KeyListe
             crr.setEnabled(false);
             noii.setEnabled(false);
          }  
-         else if (jcWorker.getSelectedItem().equals("Commission worker")){
+         else if (wo.getSelectedItem().equals("Commission worker")){
             numm.setEnabled(false);
             rpii.setEnabled(false);
             hww.setEnabled(false);
@@ -196,7 +196,7 @@ public class EmployeeRosterGui implements ActionListener, ItemListener, KeyListe
    }
    @Override
    public void actionPerformed(ActionEvent action) {
-      Object j = action.getSource();
+      Object item = action.getSource();
    }
    
    public void keyReleased(KeyEvent e){}
